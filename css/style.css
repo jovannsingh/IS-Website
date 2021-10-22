@@ -1,0 +1,302 @@
+/* google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500&display=swap');
+*{
+    padding: 0;   
+    margin:0;
+}
+
+/*body en footer code voor alle pagina's*/
+
+body{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    font-weight: 500;
+    color: white;
+    cursor: url(/cursor/Normal\ Select.cur),auto;
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    margin-left: 1.2%;
+    margin-right: 1.2%;
+}
+
+footer p{
+    font-size: 1em;
+    color: black;
+    text-align: center;
+    padding-top: 1%;
+}
+
+footer{ 
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    height: 5%;
+    width: 100%;
+    background-color: #fff778;
+}
+
+/*Logo*/
+
+header img{
+    margin-right: auto;
+    width: 100px;
+    padding-left: 15px;
+    padding-top: 15px;
+}
+
+/* Code voor nav bar */
+
+nav{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 0px;
+}
+
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 30px;
+}
+
+nav ul li a{
+    color: #FFF;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+/* Bron van hover code op nav bar https://www.youtube.com/watch?v=ex7jGbyFgpA */
+
+nav a:hover{
+    color: #fff778;
+    border-style: groove;
+    box-shadow: 0 0 10px #fff778, 0 0 40px #fff778, 0 0 80px #fff778;
+    transition-delay: 0.01s;
+}
+
+
+/* Code voor text op home pagina */
+
+.text-box{
+  color: white;
+  position: absolute;
+  bottom: 12%;
+}
+
+.text-box p{
+    font-size: 2.4em;
+    font-weight: 600;
+    text-align: left;
+}
+
+.text-box h1{
+    font-size: 8em;
+    text-align: left;
+    color: #fff778;
+}
+
+.text-box h3{
+    font-size: 30px;
+    font-weight: 500;
+    text-align: left;
+    padding-right: 33%;
+}
+
+
+/* Code voor alle h1 headings (tekst) */
+
+h1{
+    text-align: center;
+    font-size: 3em;
+    color: #fff778;
+}
+
+/* Code voor buttons op home pagina*/
+
+.text-box .homebtn{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 5%;
+}
+
+.text-box a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 2px solid #fff778;
+}
+
+
+/* Code voor service pagina */
+
+main section ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap:wrap;
+}
+
+main ul li { 
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:1em 2em 1em 2em;
+    flex: 30%;
+    max-height: 500px;
+}
+
+main #container-1 h2{
+    font-size: 2em;
+    color: #fff778;
+    text-align: center;
+}
+
+main ul p{
+    text-align: center;
+    font-size: 2em;
+}
+
+/* code voor content afbeeldingen op about us pagina */
+
+.img-gallery{
+    width: 90%;
+    margin-top: 5%;
+    margin-right: 1%;
+    display: grid;
+    justify-content: flex-end;
+    grid-template-columns: repeat(3, minmax(100px, 293px));
+    gap: 24px;
+}
+
+.img-gallery img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.img-gallery img:hover{
+    transform: scale(0.8) rotate(-15deg);
+    border-radius: 20px;
+    box-shadow: 0 32px 75px rgba(68, 77, 136, 0.2);
+}
+
+
+#about-content{
+    position: absolute;
+    margin-left: 1%;
+    top: 20%;
+    right: 68%;
+    text-align: center;
+}
+
+#about-content p{
+ margin-bottom: 25px;
+}
+
+#about-content h1{
+ font-size: 3em;
+}
+
+#about-content p{
+    font-size: 1.5em;
+}
+
+
+/* Code voor hr lijn op contact pagina */
+
+hr{
+    width: 50%;
+    height: 2px;
+    border: 0 none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 100px;
+    margin-bottom: 90px;
+    background-color: #FFF;   
+}
+
+/* Code voor tekst boven aan contact pagina */
+
+.contacttext{
+    text-align: center;
+}
+
+main h1{
+    font-size: 3em;
+    margin-top: 25px;
+}
+
+main p{
+    font-size: 2em;
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+
+ /* Code voor form op contact pagina */
+
+
+form{
+    display: flex;
+    justify-content: center;
+    margin-top: 4%;
+}
+
+form .input-group{
+    margin-bottom: 25px;
+    position: relative;
+    width: 35em;
+}
+
+input, textarea{
+    width: 100%;
+    padding: 10px;
+    outline: 0;
+    border: 1px solid #fff778;
+    background: transparent;
+    font-size: 15px;
+    color: white;
+}
+
+label{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 10px;
+    color: #FFF;
+    cursor: text;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    transition: 0.2s;
+
+}
+
+button{
+    padding: 1px 0;
+    color: black;
+    outline: none;
+    background-color: #fff778;
+    border: 1px solid black;
+    width: 44em;
+    height: 12%;
+    cursor: pointer;
+}
+
+input:focus~label,
+input:valid~label,
+textarea:focus~label,
+textarea:valid~label{
+    top: -30px;
+    font-size: 14px;
+}
+
+
